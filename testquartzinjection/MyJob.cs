@@ -2,9 +2,9 @@
 
 public class MyJob : IJob
 {
-    private readonly IBackupService _backupService;
+    private readonly IService _backupService;
 
-    public MyJob(IBackupService backupService)
+    public MyJob(IService backupService)
     {
         _backupService = backupService;
     }

@@ -8,7 +8,7 @@ internal class Program
 
         builder.AddQuartz();
         builder.Services.AddTransient<MyJob>();
-        builder.Services.AddTransient<IBackupService, BackupService>();
+        builder.Services.AddTransient<IService, MyService>();
 
         // Add builder.Services to the container.
         builder.Services.AddControllers();
