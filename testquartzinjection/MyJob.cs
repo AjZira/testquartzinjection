@@ -2,11 +2,11 @@
 
 public class MyJob : IJob
 {
-    private readonly IService _backupService;
+    private readonly IService _Service;
 
-    public MyJob(IService backupService)
+    public MyJob(IService myService)
     {
-        _backupService = backupService;
+        _Service = myService;
     }
     public Task Execute(IJobExecutionContext context)
     {
